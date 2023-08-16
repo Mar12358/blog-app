@@ -105,9 +105,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Generate migrations**
 - **Tables matching ERD Diagram**
-- **Foreign keys with corresponding index.**
+- **Foreign keys with corresponding index**
+- **Processing data in models**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,7 +204,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Improve UI**
+- [ ] **Controllers**
+- [ ] **Views**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
