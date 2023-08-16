@@ -1,5 +1,8 @@
 class Like < ApplicationRecord
-  has_many :likes
-  has_many :comments
-  has_many :posts
+  belongs_to :post, class_name: 'Post'
+  belongs_to :author
+
+  def update_likes_counter
+    post.update(likes_counter: post.likes.count)
+  end
 end
