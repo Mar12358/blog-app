@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
+RSpec.describe Post, type: :model do
   describe 'validations' do
     
     before(:each) do
