@@ -109,7 +109,7 @@ After you're finished please remove all the comments and instructions!
 - **Foreign keys with corresponding index**
 - **Processing data in models**
 - **Validations**
-- **Unit specs**
+- **Controllers**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,8 +206,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Controllers**
 - [ ] **Views**
+- [ ] **Controllers Specs**
+- [ ] **Forms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
