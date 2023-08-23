@@ -1,3 +1,14 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
-<p>Here is a Bio and list of posts for a given user</p>
+<%= render "shared/user_box", user: @user %>
+<div class = "bio-box-container">
+  <div class = "bio-box">
+    <p>Bio</p>
+    <br>
+    <p><%=@user.bio%></p>
+  </div>
+</div>
+<% @posts.each do |post| %>
+  <%= render "shared/post_box", post: post %>
+<% end %>
+<div class = "btn-container">
+  <button class = "see-all-posts">See all posts</button>
+</div>
