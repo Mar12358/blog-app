@@ -2,20 +2,18 @@ require 'rails_helper'
 
 RSpec.describe 'Controllers', type: :request do
   describe PostsController do
-    let(:user) { User.create( name: 'Martin' ) }
-    let(:post) { Post.create( author: user, title: 'Test Post') }
+    let(:user) { User.create(name: 'Martin') }
+    let(:post) { Post.create(author: user, title: 'Test Post') }
 
-    
+
 
     describe 'GET #index' do
-
       before do
         get user_posts_path(user)
       end
 
       it 'renders a successful response' do
         expect(response).to be_successful
-        
       end
 
       it 'renders the index template' do
@@ -28,7 +26,6 @@ RSpec.describe 'Controllers', type: :request do
     end
 
     describe 'GET #show' do
-
       before do
         get user_post_path(user, post)
       end

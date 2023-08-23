@@ -6,8 +6,6 @@ RSpec.describe 'Controllers', type: :request do
       User.create(name: 'Martin')
     end
 
-
-
     describe 'GET #index' do
       before do
         get users_path
