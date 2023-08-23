@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
   def index
     @page_title = "User Index Page"
-    @style_file = "user_index"
     @users = User.all
   end
   def show
     @page_title = "User Show Page"
-    @style_file = "user_show"
+    @user = User.find(params[:id])
+    @posts = Post.where(author_id: @user.id)
   end
 end
