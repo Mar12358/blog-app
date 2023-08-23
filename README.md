@@ -110,6 +110,7 @@ After you're finished please remove all the comments and instructions!
 - **Processing data in models**
 - **Validations**
 - **Controllers**
+- **Controller Specs**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,7 +208,6 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Views**
-- [ ] **Controllers Specs**
 - [ ] **Forms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
