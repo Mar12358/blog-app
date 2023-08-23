@@ -6,7 +6,7 @@
     <p><%=@user.bio%></p>
   </div>
 </div>
-<% @posts.each do |post| %>
+<% @posts.limit(3).each do |post| %>
   <%= render "shared/post_box", post: post %>
 <% end %>
 <div class = "btn-container">
