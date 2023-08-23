@@ -15,9 +15,10 @@
   object-fit: cover;
 }
 
-.user-box{
+.user-box {
   gap: 15px;
   justify-content: center;
+  margin: 15px;
 }
 
 .user-info-box,
@@ -45,6 +46,27 @@
   margin: 15px;
 }
 
-.user-box {
-  margin: 15px;
+.bio-box {
+  padding: 10px;
+  width: 68.5%;
+  align-items: center;
+  border: 2px solid gray;
+}
+
+.bio-box-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.btn-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.counters {
+  font-size: 13px;
+  text-align: end;
+  padding-right: 20px;
 }
