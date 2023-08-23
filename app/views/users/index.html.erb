@@ -1,8 +1,5 @@
 <ul id="users">
   <% @users.each do |user| %>
-    <li>
-      <img src= "<%= user.photo %>">
-      <p><%= user.name %></p>
-    </li>
+    <%= render "shared/user_box", user: user %>
   <% end %>
 </ul>

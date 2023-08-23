@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.img-container {
+  height: 10vw;
+  width: 10vw;
+}
+
+.user-image {
+  width: 100%; /* Fill the container width */
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-box{
+  gap: 15px;
+  justify-content: center;
+}
+
+.user-info-box,
+.user-box {
+  display: flex;
+}
+
+.user-info-box {
+  width: 60%;
+  justify-content: space-around;
+  border: 2px solid gray;
+}
+
+.user-name {
+  align-self: center;
+  font-size: 5vw;
+}
+
+.number-of-posts {
+  align-self:flex-end;
+  margin-bottom: 1vw;
+}
+
+#users {
+  margin: 15px;
+}
+
+.user-box {
+  margin: 15px;
+}
