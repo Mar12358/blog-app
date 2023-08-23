@@ -5,8 +5,6 @@ RSpec.describe 'Controllers', type: :request do
     let(:user) { User.create(name: 'Martin') }
     let(:post) { Post.create(author: user, title: 'Test Post') }
 
-
-
     describe 'GET #index' do
       before do
         get user_posts_path(user)
