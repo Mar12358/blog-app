@@ -13,7 +13,10 @@
 </div>
 <%= render "shared/comment_box", post: @post, limit: @post.comments_counter %>
 
-<%= @user.id%>
+<a class = "btn-container" href="<%= user_posts_path(@user) %>">
+  <button class = "see-all-posts">Back</button>
+</a>
+
 <a class = "btn-container" href="<%= url_for(action: 'index', controller: 'users') %>">
-  <button class = "back">Back</button>
+  <button class = "back">Home</button>
 </a>
