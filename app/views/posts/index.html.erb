@@ -3,7 +3,6 @@
 <% @posts.each do |post| %>
   <div class = "post-box">
     <%= render "shared/post_box", post: post %>
-    <%= render "shared/comment_box", post: post %>
-    
+    <%= render "shared/comment_box", post: post, limit: 5 %>
   </div>
 <% end %>

@@ -1,3 +1,16 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
-<p>Here is a given of posts for a given user</p>
+<div class= "post-container">
+  <div class = "post">
+    <div class = "post-header">
+      <p>Post #<%= @post.id%> by <%= @user.name%></p>
+      <p>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
+    </div>
+    <p class = "post-text">
+    <br>
+    <%= @post.text%>
+    </p>
+  </div>
+  
+</div>
+<%= render "shared/comment_box", post: @post, limit: @post.comments_counter %>
+
+<%= @user.id%>

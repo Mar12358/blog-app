@@ -47,7 +47,8 @@
 }
 
 .bio-box,
-.comments-box {
+.comments-box,
+.post {
   padding: 10px;
   width: 68.5%;
   align-items: center;
@@ -55,7 +56,8 @@
 }
 
 .bio-box-container,
-.comments-box-container {
+.comments-box-container,
+.post-container {
   display: flex;
   justify-content: center;
   margin: 10px;
@@ -75,4 +77,9 @@
   font-size: 13px;
   text-align: end;
   padding-right: 20px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
 }
