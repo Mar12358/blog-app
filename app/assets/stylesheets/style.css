@@ -95,3 +95,23 @@ a:focus {
   color: blue; /* Set text color to black on click */
   text-decoration: none; /* Remove underline on click */
 }
+
+#back-btn {
+  margin: 15px;
+}
+
+#form-title,
+.field {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.field {
+  width: 70%;
+}
