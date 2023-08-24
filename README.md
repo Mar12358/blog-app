@@ -105,12 +105,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Tables matching ERD Diagram**
-- **Foreign keys with corresponding index**
-- **Processing data in models**
 - **Validations**
-- **Controllers**
 - **Controller Specs**
+- **Forms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,7 +195,7 @@ Example:
 
 - GitHub: [@Mar12358](https://github.com/Mar12358)
 - Twitter: [@MarezegonZ](https://twitter.com/MarezegonZ)
-- LinkedIn: [Martin Ezequiel Gonzalez](https://www.linkedin.com/in/martin-ezequiel-gonzalez-30a413260/)
+- LinkedIn: [Martin Ezequiel Gonzalez](https://www.linkedin.com/in/martin-ezequiel/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -207,8 +204,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Views**
-- [ ] **Forms**
+- [ ] **Improve Style**
+- [ ] **Add devise**
+- [ ] **Add API endpoints**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
