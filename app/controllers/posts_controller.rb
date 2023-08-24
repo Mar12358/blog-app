@@ -1,4 +1,13 @@
 class PostsController < ApplicationController
-  def index; end
-  def show; end
+  def index
+    @page_title = 'Post Index Page'
+    @user = User.find(params[:user_id])
+    @posts = Post.where(author_id: @user.id)
+  end
+
+  def show
+    @page_title = 'Post Show Page'
+    @user = User.find(params[:user_id])
+    @post = @user.posts.find(params[:id])
+  end
 end
