@@ -7,8 +7,10 @@
   </div>
 </div>
 <% @posts.limit(3).each do |post| %>
-  <%= render "shared/post_box", post: post %>
+  <a class = "bio-box-container" href="<%= user_post_path(@user, post) %>">
+    <%= render "shared/post_box", post: post %>
+  </a>
 <% end %>
-<div class = "btn-container">
+<a class = "btn-container" href="<%= user_posts_path(@user) %>">
   <button class = "see-all-posts">See all posts</button>
-</div>
+</a>

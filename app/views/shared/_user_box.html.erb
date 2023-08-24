@@ -1,4 +1,4 @@
-<li class = "user-box">
+<a class = "user-box" href="<%= user_path(user) %>">
   <div class = "img-container">
     <img class = "user-image" src= "<%= user.photo %>" alt="<%= user.name %>_image">
   </div>
@@ -6,4 +6,4 @@
     <p class = "user-name"><%= user.name %></p>
     <p class = "number-of-posts">Number of posts: <%= user.posts_counter %></p>
   </div>
-</li>
+</a>
