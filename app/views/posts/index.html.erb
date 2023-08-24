@@ -3,13 +3,7 @@
 <% @posts.each do |post| %>
   <div class = "post-box">
     <%= render "shared/post_box", post: post %>
-    <% @comments = Comment.where(post_id: post.id) %>
-    <div class = "comments-box-container">
-      <div class = "comments-box">
-        <% @comments.limit(5).each do |comment| %>
-          <%= render "shared/comment_box", comment: comment, user: User.find(comment.author_id) %>
-        <% end %>
-      </div>
-    </div>
+    <%= render "shared/comment_box", post: post %>
+    
   </div>
 <% end %>
