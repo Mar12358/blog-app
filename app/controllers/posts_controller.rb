@@ -13,7 +13,6 @@ class PostsController < ApplicationController
   end
 
   def new
-    
     @post = @user.posts.build
   end
 
@@ -26,6 +25,13 @@ class PostsController < ApplicationController
     end
   end
 
+  def like
+    @post = @user.posts.find(params[:id])
+    @like = @post.likes.create(author: current_user)
+    @like.save
+    redirect_to user_post_path(@user, @post)
+  end
+
   def post_params
     params.require(:post).permit(:title, :text)
   end
@@ -33,4 +39,6 @@ class PostsController < ApplicationController
   def set_user
     @user = User.find(params[:user_id])
   end
+
+  
 end

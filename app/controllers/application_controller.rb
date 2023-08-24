@@ -5,5 +5,12 @@ class ApplicationController < ActionController::Base
     @current_user = @user || User.first
   end
 
+  def add_like
+    @like = Like.new(user: @user, post: @post)
+    if @like.save
+      print "asgas"
+    end
+  end
+  
   helper_method :current_user
 end
