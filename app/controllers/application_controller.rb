@@ -8,8 +8,6 @@ class ApplicationController < ActionController::Base
   def add_like
     @like = Like.new(user: @user, post: @post)
     return unless @like.save
-
-    print 'asgas'
   end
 
   helper_method :current_user
