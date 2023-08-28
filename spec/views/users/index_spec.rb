@@ -3,18 +3,23 @@ require 'rails_helper'
 RSpec.describe 'Users', type: :system do
   describe 'Index page' do
     let!(:user1) do
-      User.create(name: 'Martin', photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80', bio: 'Bio for Martin')
+      User.create(name: 'Martin',
+                  photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+                  bio: 'Bio for Martin')
     end
 
     let!(:user2) do
-      User.create(name: 'Matias', photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80', bio: 'Bio for Matias')
+      User.create(name: 'Matias',
+                  photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+                  bio: 'Bio for Matias')
     end
 
     let!(:user3) do
-      User.create(name: 'Flor', photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80', bio: 'Bio for Flor')
+      User.create(name: 'Flor',
+                  photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+                  bio: 'Bio for Flor')
     end
 
-    
     let!(:posts) do
       Post.create(author_id: user1.id, title: 'Post title from Martin Post 1', text: 'Martin Post Text')
       Post.create(author_id: user2.id, title: 'Post title from Matias Post 1', text: 'Matias Post 1 Text')

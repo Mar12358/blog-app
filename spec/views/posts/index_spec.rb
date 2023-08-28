@@ -2,11 +2,12 @@ require 'rails_helper'
 
 RSpec.describe 'Posts', type: :system do
   describe 'Index page' do
-
     let!(:user) do
-      User.create(name: 'Matias', photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80', bio: 'Bio for Matias')
+      User.create(name: 'Matias',
+                  photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+                  bio: 'Bio for Matias')
     end
-    
+
     let!(:post1) do
       Post.create(author_id: user.id, title: 'Post title from Matias Post 1', text: 'Matias Post 1 Text')
     end
@@ -16,10 +17,10 @@ RSpec.describe 'Posts', type: :system do
     end
 
     let!(:comments) do
-      Comment.create(post_id: post1.id, author_id: user.id, text: 'Hi this is some comment!' )
-      Comment.create(post_id: post1.id, author_id: user.id, text: 'Hi this is some other comment !' )
-      Comment.create(post_id: post1.id, author_id: user.id, text: 'Hi this is some other comment on post 1' )
-      Comment.create(post_id: post2.id, author_id: user.id, text: 'Hi this is some comment on post 2' )
+      Comment.create(post_id: post1.id, author_id: user.id, text: 'Hi this is some comment!')
+      Comment.create(post_id: post1.id, author_id: user.id, text: 'Hi this is some other comment !')
+      Comment.create(post_id: post1.id, author_id: user.id, text: 'Hi this is some other comment on post 1')
+      Comment.create(post_id: post2.id, author_id: user.id, text: 'Hi this is some comment on post 2')
     end
 
     let!(:likes) do
