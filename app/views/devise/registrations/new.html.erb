@@ -1,0 +1,33 @@
+<div class = "form-container">
+<h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Username", class: "border-black border-solid border-2 mt-4" %>
+  </div>
+
+    <div class="field">
+    <%= f.text_field :bio, autofocus: true, autocomplete: "bio", placeholder: "Biography", class: "border-black border-solid border-2 mt-4" %>
+  </div>
+
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "border-black border-solid border-2 mt-4" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password", class: "border-black border-solid border-2 mt-4"  %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password Confirmation", class: "border-black border-solid border-2 mt-4"  %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up", class: "mt-4 w-full border-black border-solid border-4" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>
