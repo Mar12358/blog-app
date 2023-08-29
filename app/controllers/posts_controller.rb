@@ -3,8 +3,8 @@ class PostsController < ApplicationController
 
   def index
     @page_title = 'Post Index Page'
-    @user = User.find(params[:user_id])
-    @posts = Post.where(author_id: @user.id)
+    @user = User.includes(:posts).find(params[:user_id])
+    @posts = Post.includes(:author, :comments, :likes).where(author_id: @user.id)
   end
 
   def show
