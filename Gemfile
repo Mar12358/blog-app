@@ -75,3 +75,4 @@ gem 'devise'
 gem 'xmpp4r'
 
 gem 'tailwindcss-rails', '~> 2.0'
+gem 'cancancan'
