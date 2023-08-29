@@ -6,6 +6,7 @@
       <div class = "likes-corner">
         <p>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
         <%= button_to "Like", like_user_post_path(@user, @post), method: :post %>
+        <%= render partial: 'posts/delete', locals: { model: @post, url: user_post_path(@user, @post) } %>
       </div>
     </div>
     <p class = "post-text">
