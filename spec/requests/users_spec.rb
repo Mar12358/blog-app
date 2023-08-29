@@ -20,7 +20,7 @@ RSpec.describe 'Controllers', type: :request do
       end
 
       it 'response body includes the right placeholders' do
-        expect(response.body).to include('Here is a list of users')
+        expect(response.body).to include('Users Index')
       end
     end
 
@@ -38,7 +38,7 @@ RSpec.describe 'Controllers', type: :request do
       end
 
       it 'response body includes the right placeholders' do
-        expect(response.body).to include('Here is a Bio and list of posts for a given user')
+        expect(response.body).to include('User Show')
       end
     end
   end

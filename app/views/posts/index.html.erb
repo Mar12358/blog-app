@@ -1,5 +1,5 @@
+<h1>Posts Index</h1>
 <%= render "shared/user_box", user: @user %>
-
 <% @posts.each do |post| %>
   <a class = "post-box" href="<%= user_post_path(@user, post) %>">
     <div class = "bio-box-container">
@@ -8,7 +8,9 @@
       <%= render "shared/comment_box", post: post, limit: 5 %>
   </div>
 <% end %>
-
+<a class = "btn-container" href="#">
+    <button class='pagination-btn'>Pagination</button>
+</a>
 <a class = "btn-container" href="<%= new_user_post_path(@user) %>">
     <button class='new-post-btn'>Create a new post</button>
 </a>

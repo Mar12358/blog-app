@@ -120,3 +120,7 @@ a:focus {
   display: flex;
   gap: 10px;
 }
+
+h1 {
+  text-align: center;
+}
