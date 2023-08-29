@@ -71,5 +71,5 @@ group :development do
   # gem "spring"
 end
 
-gem 'xmpp4r'
 gem 'devise'
+gem 'xmpp4r'

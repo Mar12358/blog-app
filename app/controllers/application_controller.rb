@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
     @like = Like.new(user: @user, post: @post)
     nil unless @like.save
   end
-  
+
   protected
 
   def update_allowed_parameters
@@ -15,7 +15,4 @@ class ApplicationController < ActionController::Base
       u.permit(:name, :bio, :email, :password, :current_password)
     end
   end
-
-  
-
 end
