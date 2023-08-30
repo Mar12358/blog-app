@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_user
 
   def index
@@ -23,6 +24,13 @@ class PostsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.comments.destroy_all
+    @post.destroy
+    redirect_to user_posts_path(params[:user_id])
   end
 
   def like

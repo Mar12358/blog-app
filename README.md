@@ -105,8 +105,8 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Validations**
-- **Controller Specs**
+- **CanCanCan**
+- **Devise**
 - **Forms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -210,9 +210,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Improve Style**
-- [ ] **Add devise**
 - [ ] **Add API endpoints**
+- [ ] **Improve Style**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

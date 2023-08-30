@@ -6,6 +6,9 @@
       <div class = "likes-corner">
         <p>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
         <%= button_to "Like", like_user_post_path(@user, @post), method: :post %>
+        <% if can? :destroy, @post %>
+          <%= render partial: 'posts/delete', locals: { model: @post, url: user_post_path(@user, @post) } %>   
+        <% end %>
       </div>
     </div>
     <p class = "post-text">
@@ -18,13 +21,13 @@
 <%= render "shared/comment_box", post: @post, limit: @post.comments_counter %>
 
 <a class = "btn-container" href="<%= new_user_post_comment_path(@user, @post) %>">
-    <button class='new-comment-btn'>Create a new comment</button>
+    <button class='new-comment-btn text-center p-1 border-solid border-black border-2'>Create a new comment</button>
 </a>
 
 <a class = "btn-container" href="<%= user_posts_path(@user) %>">
-  <button class = "see-all-posts">⬅ Back</button>
+  <button class = "see-all-posts text-center p-1 border-solid border-black border-2">⬅ Back</button>
 </a>
 
 <a class = "btn-container" href="<%= url_for(action: 'index', controller: 'users') %>">
-  <button class = "back">Home</button>
+  <button class = "back text-center p-1 border-solid border-black border-2">Home</button>
 </a>
