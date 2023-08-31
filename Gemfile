@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails-controller-testing'
 gem 'rspec'
 gem 'rubocop', '>= 1.0', '< 2.0'
-ruby '3.2.2'
+ruby '3.2.1'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.7'
@@ -77,4 +77,4 @@ gem 'xmpp4r'
 gem 'cancancan'
 gem 'tailwindcss-rails', '~> 2.0'
 
-gem "active_model_serializers", "~> 0.10.13"
+gem 'active_model_serializers', '~> 0.10.13'
