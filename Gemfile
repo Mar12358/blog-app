@@ -78,3 +78,4 @@ gem 'cancancan'
 gem 'tailwindcss-rails', '~> 2.0'
 
 gem 'active_model_serializers', '~> 0.10.13'
+gem 'rswag'
